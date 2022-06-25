@@ -43,7 +43,7 @@ zplugin ice as"program" pick"$ZPFX/sdkman/bin/sdk" id-as'sdkman' run-atpull \
     atclone"wget https://get.sdkman.io -O scr.sh; SDKMAN_DIR=$ZPFX/sdkman bash scr.sh" \
     atpull"SDKMAN_DIR=$ZPFX/sdkman sdk selfupdate" \
     atinit"export SDKMAN_DIR=$ZPFX/sdkman; source $ZPFX/sdkman/bin/sdkman-init.sh"
-zplugin light zdharma/null
+zplugin light TralahM/null
 
 #
 # Completions
@@ -88,7 +88,7 @@ zplugin light paoloantinori/hhighlighter
 # Snippets
 #
 
-# Uses z-p-submods z-plugin: https://github.com/zdharma/z-p-submods
+# Uses z-p-submods z-plugin: https://github.com/TralahM/z-p-submods
 zplugin ice svn submods"clvv/fasd -> external"
 zplugin snippet PZT::modules/fasd
 

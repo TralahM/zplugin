@@ -663,7 +663,7 @@ ____
  
  Adds the plugin to ZPLG_REGISTERED_PLUGINS array and to the
  LOADED_PLUGINS array (managed according to the plugin standard:
- http://zdharma.org/Zsh-100-Commits-Club/Zsh-Plugin-Standard.html)
+ http://TralahM.org/Zsh-100-Commits-Club/Zsh-Plugin-Standard.html)
 ____
 
 Has 19 line(s). Doesn't call other functions.

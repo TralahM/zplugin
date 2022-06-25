@@ -32,7 +32,7 @@ All notable changes to this project will be documented in this file.
     % zplugin ice on-update-of'{~/files-*,/tmp/files-*}' lucid \
         atload"echo I have been loaded" \
         notify"Yes that's true :)"
-    % zplugin load zdharma/null
+    % zplugin load TralahM/null
     % touch ~/files-1
     The plugin has been loaded
     %
@@ -49,17 +49,17 @@ All notable changes to this project will be documented in this file.
     when the plugin or snippet gets loaded. E.g.:
 
     ```zsh
-    % zplugin ice wait"0" lucid notify"zdharma/null has been loaded"
-    % zplugin light zdharma/null
+    % zplugin ice wait"0" lucid notify"TralahM/null has been loaded"
+    % zplugin light TralahM/null
     %
-    zdharma/null has been loaded
+    TralahM/null has been loaded
     ```
 
     In case of problems with the loading a warning message will be output:
 
     ```
     % zplugin ice notify atload'return 7'
-    % zplugin light zdharma/null
+    % zplugin light TralahM/null
     %
     notify: Plugin not loaded / loaded with problem, the return code: 7
     ```
@@ -108,7 +108,7 @@ All notable changes to this project will be documented in this file.
 * 12-10-2018
   - New `id-as''` ice-mod. You can nickname a plugin or snippet, to e.g. load it twice, with different `pick''`
     ice-mod, or from Github binary releases and regular Github repository at the same time. More information
-    in [blog post](http://zdharma.org/2018-10-12/Nickname-a-plugin-or-snippet).
+    in [blog post](http://TralahM.org/2018-10-12/Nickname-a-plugin-or-snippet).
 
 * 30-08-2018
   - New `as''` ice-mod value: `completion`. Can be used to install completion-only "plugins", even single
@@ -120,19 +120,19 @@ All notable changes to this project will be documented in this file.
 
   - Uplift of Git-output, it now has an animated progress-bar:
 
-  ![image](https://raw.githubusercontent.com/zdharma/zplugin/images/zplg-progress-bar.gif)
+  ![image](https://raw.githubusercontent.com/TralahM/zplugin/images/zplg-progress-bar.gif)
 
 * 15-08-2018
   - New `$ZPLGM` field `COMPINIT_OPTS` (also see [Customizing Paths](#customizing-paths--other)). You can pass
     `-C` or `-i` there to mute the `insecure directories` messages. Typical use case could be:
     ```zsh
     zplugin ice wait"5" atinit"ZPLGM[COMPINIT_OPTS]=-C; zpcompinit; zpcdreplay" lucid
-    zplugin light zdharma/fast-syntax-highlighting
+    zplugin light TralahM/fast-syntax-highlighting
     ```
 
 * 13-08-2018
   - `self-update` (subcommand used to update Zplugin) now lists new commits downloaded by the update:
-  ![image](https://raw.githubusercontent.com/zdharma/zplugin/images/zplg-self-update.png)
+  ![image](https://raw.githubusercontent.com/TralahM/zplugin/images/zplg-self-update.png)
 
   - New subcommand `bindkeys` that lists what bindkeys each plugin has set up.
 
@@ -173,11 +173,11 @@ All notable changes to this project will be documented in this file.
 
 * 05-02-2018
   - I work much on this README however multi-file Wiki might be better to read – it
-    [just has been created](https://github.com/zdharma/zplugin/wiki).
+    [just has been created](https://github.com/TralahM/zplugin/wiki).
 
 * 16-01-2018
   - New ice-mod `compile` which takes pattern to select additional files to compile, e.g.
-    `zplugin ice compile"(hsmw-*|history-*)"` (for `zdharma/history-search-multi-word` plugin).
+    `zplugin ice compile"(hsmw-*|history-*)"` (for `TralahM/history-search-multi-word` plugin).
     See [Ice Modifiers](#ice-modifiers).
 
 * 14-01-2018
@@ -210,7 +210,7 @@ All notable changes to this project will be documented in this file.
     (details on [zservices/redis](https://github.com/zservices/redis)).
 
 * 24-12-2017
-  - Xmas present – [fast-syntax-highlighting](https://github.com/zdharma/fast-syntax-highlighting)
+  - Xmas present – [fast-syntax-highlighting](https://github.com/TralahM/fast-syntax-highlighting)
     now highlights the quoted part in `atinit"echo Initializing"`, i.e. it supports ICE syntax :)
 
 * 08-12-2017
@@ -229,7 +229,7 @@ All notable changes to this project will be documented in this file.
     [full story](#automatic-loadunload-on-condition) and [Asciinema video](https://asciinema.org/a/150825).
 
 * 29-11-2017
-  - **[Turbo Mode](https://github.com/zdharma/zplugin#turbo-mode-zsh--53)** – **39-50% or more faster Zsh startup!**
+  - **[Turbo Mode](https://github.com/TralahM/zplugin#turbo-mode-zsh--53)** – **39-50% or more faster Zsh startup!**
   - Subcommand `update` can update snippets, via given URL (up to this point snippets were updated via
     `zplugin update --all`).
   - Completion management is enabled for snippets (not only plugins).
@@ -239,13 +239,13 @@ All notable changes to this project will be documented in this file.
     plugins and snippets. For example there's `Zshelldoc` that uses `Makefile` to build final scripts:
 
     ```SystemVerilog
-    zplugin ice as"program" pick"build/zsd*" make; zplugin light zdharma/zshelldoc
+    zplugin ice as"program" pick"build/zsd*" make; zplugin light TralahM/zshelldoc
     ```
 
     The above doesn't trigger the `install` target, but this does:
 
     ```SystemVerilog
-    zplugin ice as"program" pick"build/zsd*" make"install PREFIX=/tmp"; zplugin light zdharma/zshelldoc
+    zplugin ice as"program" pick"build/zsd*" make"install PREFIX=/tmp"; zplugin light TralahM/zshelldoc
     ```
 
   - Fixed problem with binary-release selection (`from"gh-r"`) by adding Ice-mod `bpick`, which
@@ -259,7 +259,7 @@ All notable changes to this project will be documented in this file.
 * 04-11-2017
   - New subcommand `ls` which lists snippets-directory in a formatted and colorized manner. Example:
 
-  ![zplugin-ls](https://raw.githubusercontent.com/zdharma/zplugin/images/zplg-ls.png)
+  ![zplugin-ls](https://raw.githubusercontent.com/TralahM/zplugin/images/zplg-ls.png)
 
 * 29-10-2017
   - Subversion protocol (supported by Github) can be used to clone **subdirectories** when using
@@ -309,7 +309,7 @@ All notable changes to this project will be documented in this file.
     Plugin loading times:
     0.010 sec - OMZ::lib/git.zsh
     0.001 sec - OMZ::plugins/git/git.plugin.zsh
-    0.003 sec - zdharma/history-search-multi-word
+    0.003 sec - TralahM/history-search-multi-word
     0.003 sec - rimraf/k
     0.003 sec - zsh-users/zsh-autosuggestions
     ```

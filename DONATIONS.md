@@ -22,13 +22,13 @@ features, sometimes many days in a row.
 
 ## 2018-08-14, received $30
 
- * **Project**: **[Zplugin](https://github.com/zdharma/zplugin)**
+ * **Project**: **[Zplugin](https://github.com/TralahM/zplugin)**
  * **Goal**: Create a binary Zsh module with one Zplugin optimization and optionally some
    other features.
  * **Status**: The job is done.
 
 Thanks to this donation I have finally started to code **[binary Zplugin module](
-https://github.com/zdharma/zplugin#quick-start-module-only)**, which is a big step onward
+https://github.com/TralahM/zplugin#quick-start-module-only)**, which is a big step onward
 in evolution of Zplugin. I've implemented and published the module with 3 complete
 features: 1) `load` optimization, 2) autocompilation of scripts, 3) profiling of script
 load times.
@@ -37,7 +37,7 @@ Commit list:
 ```
 2018-08-22 7b96fad doc: mod-install.sh
 2018-08-22 ba1ba64 module: Update zpmod usage text
-2018-08-22 b0d72e8 zplugin,*autoload: `module' command, manages new zdharma/zplugin module
+2018-08-22 b0d72e8 zplugin,*autoload: `module' command, manages new TralahM/zplugin module
 2018-08-22 706bbb3 Update Zsh source files to latest
 2018-08-20 b77426f module: source-study builds report with milliseconds without fractions
 2018-08-20 c3cc09b module: Updated zpmod_usage, i.a. with `source-study' sub-command
@@ -58,7 +58,7 @@ Commit list:
 
 ## 2018-08-03, received $8
 
- * **Project**: **[zdharma/history-search-multi-word](https://github.com/zdharma/history-search-multi-word)**
+ * **Project**: **[TralahM/history-search-multi-word](https://github.com/TralahM/history-search-multi-word)**
  * **Goal**: Allow calling `zle reset-prompt` (Zshell feature).
  * **Status**: The job is done.
 
@@ -75,7 +75,7 @@ Commit list:
 
 ## 2018-08-02, received $3 from Patreon
 
- * **Project**: **[zdharma/fast-syntax-highlighting](https://github.com/zdharma/fast-syntax-highlighting)**
+ * **Project**: **[TralahM/fast-syntax-highlighting](https://github.com/TralahM/fast-syntax-highlighting)**
  * **Goal**: No goal set up.
  * **Status**: Bug-fixing work.
 
@@ -107,7 +107,7 @@ Commit list:
 
 ## 2018-07-31, received $7
 
- * **Project**: **[zdharma/fast-syntax-highlighting](https://github.com/zdharma/fast-syntax-highlighting)**
+ * **Project**: **[TralahM/fast-syntax-highlighting](https://github.com/TralahM/fast-syntax-highlighting)**
  * **Goal**: Implement ideal brackets highlighting.
  * **Status**: The job is done.
 
@@ -136,7 +136,7 @@ Commit list:
 
 ## 2018-07-28, received $2
 
- * **Project**: **[zdharma/fast-syntax-highlighting](https://github.com/zdharma/fast-syntax-highlighting)**
+ * **Project**: **[TralahM/fast-syntax-highlighting](https://github.com/TralahM/fast-syntax-highlighting)**
  * **Goal**: Distinguish file and directory when highlighting
  * **Status**: The job is done.
 
@@ -153,7 +153,7 @@ Commit list:
 
 ## 2018-07-25, received $3
 
- * **Project**: **[zdharma/zshelldoc](https://github.com/zdharma/zshelldoc)**
+ * **Project**: **[TralahM/zshelldoc](https://github.com/TralahM/zshelldoc)**
  * **Goal**: Implement documenting of used environment variables.
  * **Status**: The job is done.
 
@@ -177,7 +177,7 @@ Commit list:
 
 ## 2018-07-20, received $3
 
- * **Project**: **[zdharma/zshelldoc](https://github.com/zdharma/zshelldoc)**
+ * **Project**: **[TralahM/zshelldoc](https://github.com/TralahM/zshelldoc)**
  * **Goal**: Implement stripping of leading `#` char from functions' descriptions.
  * **Status**: The job is done.
 
@@ -192,7 +192,7 @@ Commit list:
 
 ## 2018-06-17, received ~$155 (200 CAD)
 
- * **Project**: **[zdharma/fast-syntax-highlighting](https://github.com/zdharma/fast-syntax-highlighting)**
+ * **Project**: **[TralahM/fast-syntax-highlighting](https://github.com/TralahM/fast-syntax-highlighting)**
  * **Goal**: No goal set up.
  * **Status**: Done intense research.
 
@@ -220,7 +220,7 @@ Commit list:
 
 ## 2018-06-10, received $10
 
- * **Project**: **[zdharma/fast-syntax-highlighting](https://github.com/zdharma/fast-syntax-highlighting)**
+ * **Project**: **[TralahM/fast-syntax-highlighting](https://github.com/TralahM/fast-syntax-highlighting)**
  * **Goal**: No goal set up.
  * **Status**: Done intense experimenting.
 
@@ -248,7 +248,7 @@ Commit list:
 
 ## 2018-05-25, received $50
 
- * **Project**: **[zdharma/fast-syntax-highlighting](https://github.com/zdharma/fast-syntax-highlighting)**
+ * **Project**: **[TralahM/fast-syntax-highlighting](https://github.com/TralahM/fast-syntax-highlighting)**
  * **Goal**: No goal set up.
  * **Status**: New ideas and features.
 
@@ -344,7 +344,7 @@ in 16 days.
 2018-06-04 f54d770 *-highlight: Rename $cur_cmd to $active_command
 2018-06-04 3f24e68 *-highlight: Make sudo and always-block compatible with `case' handling
 2018-06-02 cd82637 themes: forest.ini to support 3 new `case' styles
-2018-06-02 e1e993e themes: safari.ini & zdharma.ini to support 3 new `case' styles
+2018-06-02 e1e993e themes: safari.ini & TralahM.ini to support 3 new `case' styles
 2018-06-02 2e78a02 themes: clean.ini & default.ini to support 3 new `case' styles
 2018-06-02 c1c3aab themes: free.ini to support 3 new `case' styles
 2018-06-02 70a7e18 fast-theme,*-highlight: 3 new styles for `case' higlighting
@@ -370,7 +370,7 @@ in 16 days.
 2018-06-02 494868e themes: clean.ini to have globbing color specifically selected
 2018-06-01 fca6b3d images: herestring.png #9
 2018-06-01 f9842c1 themes: forest.ini to use underline instead of bg color #9
-2018-06-01 c25c539 themes: Small tune-up of forest & zdharma themes for here-string #9
+2018-06-01 c25c539 themes: Small tune-up of forest & TralahM themes for here-string #9
 2018-06-01 988d504 themes: Rudimentary (all same) configuration of here-string tokens #9
 2018-06-01 99842d2 fast-theme,*-highlight: Support for here-string, can use bg color #9
 2018-06-01 f739c30 Updated README.md
@@ -401,7 +401,7 @@ in 16 days.
 2018-05-30 1c5a56c *-highlight: Support ${VAR} at command position (not only $VAR)
 2018-05-30 f19d761 Updated README.md
 2018-05-30 4a27351 images: for-loop
-2018-05-30 4d650de themes: zdharma.ini to support for-loop
+2018-05-30 4d650de themes: TralahM.ini to support for-loop
 2018-05-30 45cafbc themes: safari.ini to support for-loop
 2018-05-30 8bb9ee0 themes: free.ini to support for-loop
 2018-05-30 f25a059 themes: forest.ini to support for-loop
@@ -416,7 +416,7 @@ in 16 days.
 2018-05-27 ec305f6 fast-theme: Help message treats about -t/--test
 2018-05-27 0e1d19a Updated README.md
 2018-05-27 5c3c911 Updated README.md
-2018-05-26 76af248 themes: A fix for zdharma theme, 61 -> 63, a lighter color for builtins
+2018-05-26 76af248 themes: A fix for TralahM theme, 61 -> 63, a lighter color for builtins
 2018-05-26 8eca0f2 *fast-theme: Ability to test theme after setting it (-t/--test)
 2018-05-26 d3a7922 *-highlight: Fix in_array_assignment setting when closing ) found
 2018-05-26 796c482 *-highlight: Make parameters' names exotic blank-var detection to work
@@ -430,7 +430,7 @@ in 16 days.
 2018-05-26 d971f39 fast-theme: Detect lack of theme name in arguments
 2018-05-26 74f0d4d fast-theme: Use standard option parsing (zparseopts) and typical options
 2018-05-26 d9c6180 New theme: `forest'
-2018-05-26 419c156 New theme: `zdharma'
+2018-05-26 419c156 New theme: `TralahM'
 2018-05-26 a7735df gitignore
 2018-05-26 99db69a New theme: `free'
 2018-05-26 73619ff New theme: `clean'

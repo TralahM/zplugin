@@ -1,11 +1,11 @@
-[![paypal](https://img.shields.io/badge/-Donate-yellow.svg?longCache=true&style=for-the-badge)](https://www.paypal.me/ZdharmaInitiative)
+[![paypal](https://img.shields.io/badge/-Donate-yellow.svg?longCache=true&style=for-the-badge)](https://www.paypal.me/TralahMInitiative)
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D54B3S7C6HGME)
 [![patreon](https://img.shields.io/badge/-Patreon-orange.svg?longCache=true&style=for-the-badge)](https://www.patreon.com/psprint)
 <br/>New: You can request a feature when donating, even fancy or advanced ones get implemented this way. [There are
 reports](DONATIONS.md) about what is being done with the money received.
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/zdharma/zplugin/master/doc/img/zplugin.png" />
+<img src="https://raw.githubusercontent.com/TralahM/zplugin/master/doc/img/zplugin.png" />
 </p>
 
 [![Status][status-badge]][status-link] [![MIT License][MIT-badge]][MIT-link] [![][ver-badge]][ver-link] ![][act-badge] [![Chat at https://gitter.im/zplugin/Lobby][lobby-badge]][lobby-link]
@@ -69,7 +69,7 @@ reports](DONATIONS.md) about what is being done with the money received.
 * 09-07-2019
   - Zplugin can now have **its own plugins**, called **z-plugins**! Check out an
     example but fully functional z-plugin
-    [zdharma/z-p-submods](https://github.com/zdharma/z-p-submods) and a document that
+    [TralahM/z-p-submods](https://github.com/TralahM/z-p-submods) and a document that
     explains on how to implement your own z-plugin
     ([here](../../wiki/Z-PLUGINS)).
 
@@ -101,7 +101,7 @@ reports](DONATIONS.md) about what is being done with the money received.
     % zplugin ice on-update-of'{~/files-*,/tmp/files-*}' lucid \
         atload"echo I have been loaded" \
         notify"Yes that's true :)"
-    % zplugin load zdharma/null
+    % zplugin load TralahM/null
     % touch ~/files-1
     The plugin has been loaded
     %
@@ -118,17 +118,17 @@ reports](DONATIONS.md) about what is being done with the money received.
     when the plugin or snippet gets loaded. E.g.:
 
     ```zsh
-    % zplugin ice wait"0" lucid notify"zdharma/null has been loaded"
-    % zplugin light zdharma/null
+    % zplugin ice wait"0" lucid notify"TralahM/null has been loaded"
+    % zplugin light TralahM/null
     %
-    zdharma/null has been loaded
+    TralahM/null has been loaded
     ```
 
     In case of problems with the loading a warning message will be output:
 
     ```
     % zplugin ice notify atload'return 7'
-    % zplugin light zdharma/null
+    % zplugin light TralahM/null
     %
     notify: Plugin not loaded / loaded with problem, the return code: 7
     ```
@@ -185,7 +185,7 @@ to call `compinit` only once in `.zshrc`.
 
 # Zplugin Wiki
 
-The information in this README is complemented by the [Zplugin wiki](http://zdharma.org/zplugin/wiki/). The README is an introductory overview of Zplugin while the wiki gives a complete and in-depth information with examples. Make sure to read it to get the most out of Zplugin.
+The information in this README is complemented by the [Zplugin wiki](http://TralahM.org/zplugin/wiki/). The README is an introductory overview of Zplugin while the wiki gives a complete and in-depth information with examples. Make sure to read it to get the most out of Zplugin.
 
 # Getting Help
 
@@ -202,7 +202,7 @@ If you need help you can do the following:
 The easiest way to install Zplugin is to execute: 
 
 ```zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/TralahM/zplugin/master/doc/install.sh)"
 ```
 
 This will install Zplugin in `~/.zplugin/bin`. `.zshrc` will be updated with three
@@ -216,7 +216,7 @@ To manually install Zplugin clone the repo to e.g. `~/.zplugin/bin`:
 
 ```sh
 mkdir ~/.zplugin
-git clone https://github.com/zdharma/zplugin.git ~/.zplugin/bin
+git clone https://github.com/TralahM/zplugin.git ~/.zplugin/bin
 ```
 
 and source it from `.zshrc` (above compinit):
@@ -239,7 +239,7 @@ After installing and reloading the shell compile Zplugin with `zplugin self-upda
 
 ## Introduction
 
-[Click here to read the introduction to Zplugin](http://zdharma.org/zplugin/wiki/INTRODUCTION/). It explains basic usage and some of the more unique features of Zplugin such as the Turbo mode. If you're new to Zplugin we highly recommend you read it at least once.
+[Click here to read the introduction to Zplugin](http://TralahM.org/zplugin/wiki/INTRODUCTION/). It explains basic usage and some of the more unique features of Zplugin such as the Turbo mode. If you're new to Zplugin we highly recommend you read it at least once.
 
 ## Example Usage
 
@@ -248,10 +248,10 @@ After installing Zplugin you can start adding some actions (load some plugins) t
 ```zsh
 # Two regular plugins loaded without tracking.
 zplugin light zsh-users/zsh-autosuggestions
-zplugin light zdharma/fast-syntax-highlighting
+zplugin light TralahM/fast-syntax-highlighting
 
 # Plugin history-search-multi-word loaded with tracking.
-zplugin load zdharma/history-search-multi-word
+zplugin load TralahM/history-search-multi-word
 
 # Load the pure theme, with zsh-async library that's bundled with it.
 zplugin ice pick"async.zsh" src"pure.zsh"
@@ -273,7 +273,7 @@ zplugin load docker/compose
 # Vim repository on GitHub – a typical source code that needs compilation – Zplugin
 # can manage it for you if you like, run `./configure` and other `make`, etc. stuff.
 # Ice-mod `pick` selects a binary program to add to $PATH. You could also install the
-# package under the path $ZPFX, see: http://zdharma.org/zplugin/wiki/Compiling-programs
+# package under the path $ZPFX, see: http://TralahM.org/zplugin/wiki/Compiling-programs
 zplugin ice as"program" atclone"rm -f src/auto/config.cache; ./configure" \
     atpull"%atclone" make pick"src/vim"
 zplugin light vim/vim
@@ -295,22 +295,22 @@ zplugin creinstall %HOME/my_completions
 zplugin ice atclone"dircolors -b LS_COLORS > c.zsh" atpull'%atclone' pick"c.zsh" nocompile'!'
 zplugin light trapd00r/LS_COLORS
 ```
-[You can see an extended explanation of LS_COLORS in the wiki.](http://zdharma.org/zplugin/wiki/LS_COLORS-explanation/)
+[You can see an extended explanation of LS_COLORS in the wiki.](http://TralahM.org/zplugin/wiki/LS_COLORS-explanation/)
 
 ```zsh
 # make'!...' -> run make before atclone & atpull
 zplugin ice as"program" make'!' atclone'./direnv hook zsh > zhook.zsh' atpull'%atclone' src"zhook.zsh"
 zplugin light direnv/direnv
 ```
-[You can see an extended explanation of direnv in the wiki.](http://zdharma.org/zplugin/wiki/Direnv-explanation/)
+[You can see an extended explanation of direnv in the wiki.](http://TralahM.org/zplugin/wiki/Direnv-explanation/)
 
 If you're interested in more examples then check out the [zplugin-configs 
-repository](https://github.com/zdharma/zplugin-configs) where users have uploaded their
+repository](https://github.com/TralahM/zplugin-configs) where users have uploaded their
 `~/.zshrc` and Zplugin configurations. Feel free to
-[submit](https://github.com/zdharma/zplugin-configs/issues/new?template=request-to-add-zshrc-to-the-zplugin-configs-repo.md)
+[submit](https://github.com/TralahM/zplugin-configs/issues/new?template=request-to-add-zshrc-to-the-zplugin-configs-repo.md)
 your `~/.zshrc` there if it contains Zplugin commands.
 
-You can also check out the [Gallery of Zplugin Invocations](http://zdharma.org/zplugin/wiki/GALLERY/) for some additional examples.
+You can also check out the [Gallery of Zplugin Invocations](http://TralahM.org/zplugin/wiki/GALLERY/) for some additional examples.
 
 ## Ice Modifiers
 
@@ -328,9 +328,9 @@ appropriate wiki page for an extended explanation.
 | `proto` | Change protocol to `git`,`ftp`,`ftps`,`ssh`, `rsync`, etc. Default is `https`. | :heavy_check_mark: | :heavy_multiplication_x: |
 | `from` | Clone plugin from given site. Supported are `from"github"` (default), `..."github-rel"`, `..."gitlab"`, `..."bitbucket"`, `..."notabug"` (short names: `gh`, `gh-r`, `gl`, `bb`, `nb`). Can also be a full domain name (e.g. for GitHub enterprise). | :heavy_check_mark: | :heavy_multiplication_x: |
 | `as` | Can be `as"program"` (also alias `as"command"`), and will cause to add script/program to `$PATH` instead of sourcing (see `pick`). Can also be `as"completion"`. | :heavy_check_mark: | :heavy_check_mark: |
-| [**`id-as`**](http://zdharma.org/zplugin/wiki/id-as/) | Nickname a plugin or snippet, to e.g. create a short handler for long-url snippet. | :heavy_check_mark: | :heavy_check_mark: |
+| [**`id-as`**](http://TralahM.org/zplugin/wiki/id-as/) | Nickname a plugin or snippet, to e.g. create a short handler for long-url snippet. | :heavy_check_mark: | :heavy_check_mark: |
 | `ver` | Used with `from"gh-r"` (i.e. downloading a binary release, e.g. for use with `as"program"`) – selects which version to download. Default is latest, can also be explicitly `ver"latest"`. Works also with regular plugins, checkouts e.g. `ver"abranch"`, i.e. a specific version. | :heavy_check_mark: | :heavy_check_mark: |
-| [**`pick`**](http://zdharma.org/zplugin/wiki/Sourcing-multiple-files/) | Select the file to source, or the file to set as command (when using `snippet --command` or ICE `as"program"`), e.g. `zplugin ice pick"*.plugin.zsh"`. | :heavy_check_mark: | :heavy_check_mark: |
+| [**`pick`**](http://TralahM.org/zplugin/wiki/Sourcing-multiple-files/) | Select the file to source, or the file to set as command (when using `snippet --command` or ICE `as"program"`), e.g. `zplugin ice pick"*.plugin.zsh"`. | :heavy_check_mark: | :heavy_check_mark: |
 | `bpick` | Used to select which release from GitHub Releases to download, e.g. `zplg ice from"gh-r" as"program" bpick"*Darwin*"; zplg load docker/compose` | :heavy_check_mark: | :heavy_multiplication_x: |
 | `depth` | Pass `--depth` to `git`, i.e. limit how much of history to download. | :heavy_check_mark: | :heavy_multiplication_x: |
 | `cloneopts` | Pass the contents of `cloneopts` to `git clone`. Defaults to `--recursive` i.e. Change cloning options. | :heavy_check_mark: | :heavy_multiplication_x: |
@@ -353,17 +353,17 @@ appropriate wiki page for an extended explanation.
 | `cloneonly` | Don't load the plugin / snippet, only download it | :heavy_check_mark: | :heavy_check_mark: |
 | `nocd` | Don't switch the current directory into the plugin's directory when evaluating the above ice-mods `atinit''`,`atload''`, etc. | :heavy_check_mark: | :heavy_check_mark: |
 | `svn` | Use Subversion for downloading snippet. GitHub supports `SVN` protocol, this allows to clone subdirectories as snippets, e.g. `zplugin ice svn; zplugin snippet OMZ::plugins/git`. Other ice `pick` can be used to select file to source (default are: `*.plugin.zsh`, `init.zsh`, `*.zsh-theme`). | :heavy_multiplication_x: | :heavy_check_mark: |
-| [**`make`**](http://zdharma.org/zplugin/wiki/Installing-with-make) | Run `make` command after cloning/updating and executing `mv`, `cp`, `atpull`, `atclone` Ice mods. Can obtain argument, e.g. `make"install PREFIX=/opt"`. If the value starts with `!` then `make` is ran before `atclone`/`atpull`, e.g. `make'!'`. | :heavy_check_mark: | :heavy_check_mark: |
-| [**`src`**](http://zdharma.org/zplugin/wiki/Sourcing-multiple-files) | Specify additional file to source after sourcing main file or after setting up command (via `as"program"`). | :heavy_check_mark: | :heavy_check_mark: |
-| [**`wait`**](http://zdharma.org/zplugin/wiki/Example-wait-conditions) | Postpone loading a plugin or snippet. For `wait'1'`, loading is done `1` second after prompt. For `wait'[[ ... ]]'`, `wait'(( ... ))'`, loading is done when given condition is meet. For `wait'!...'`, prompt is reset after load. Zsh can start 39% faster thanks to postponed loading (result obtained in test with `11` plugins). **Fact:** when `wait` is used without value, it works as `wait'0'`. | :heavy_check_mark: | :heavy_check_mark: |
-| [**`load`**](http://zdharma.org/zplugin/wiki/Multiple-prompts) | A condition to check which should cause plugin to load. It will load once, the condition can be still true, but will not trigger second load (unless plugin is unloaded earlier, see `unload` below). E.g.: `load'[[ $PWD = */github* ]]'`. | :heavy_check_mark: | :heavy_check_mark: |
-| [**`unload`**](http://zdharma.org/zplugin/wiki/Multiple-prompts) | A condition to check causing plugin to unload. It will unload once, then only if loaded again. E.g.: `unload'[[ $PWD != */github* ]]'`. | :heavy_check_mark: | :heavy_check_mark: |
+| [**`make`**](http://TralahM.org/zplugin/wiki/Installing-with-make) | Run `make` command after cloning/updating and executing `mv`, `cp`, `atpull`, `atclone` Ice mods. Can obtain argument, e.g. `make"install PREFIX=/opt"`. If the value starts with `!` then `make` is ran before `atclone`/`atpull`, e.g. `make'!'`. | :heavy_check_mark: | :heavy_check_mark: |
+| [**`src`**](http://TralahM.org/zplugin/wiki/Sourcing-multiple-files) | Specify additional file to source after sourcing main file or after setting up command (via `as"program"`). | :heavy_check_mark: | :heavy_check_mark: |
+| [**`wait`**](http://TralahM.org/zplugin/wiki/Example-wait-conditions) | Postpone loading a plugin or snippet. For `wait'1'`, loading is done `1` second after prompt. For `wait'[[ ... ]]'`, `wait'(( ... ))'`, loading is done when given condition is meet. For `wait'!...'`, prompt is reset after load. Zsh can start 39% faster thanks to postponed loading (result obtained in test with `11` plugins). **Fact:** when `wait` is used without value, it works as `wait'0'`. | :heavy_check_mark: | :heavy_check_mark: |
+| [**`load`**](http://TralahM.org/zplugin/wiki/Multiple-prompts) | A condition to check which should cause plugin to load. It will load once, the condition can be still true, but will not trigger second load (unless plugin is unloaded earlier, see `unload` below). E.g.: `load'[[ $PWD = */github* ]]'`. | :heavy_check_mark: | :heavy_check_mark: |
+| [**`unload`**](http://TralahM.org/zplugin/wiki/Multiple-prompts) | A condition to check causing plugin to unload. It will unload once, then only if loaded again. E.g.: `unload'[[ $PWD != */github* ]]'`. | :heavy_check_mark: | :heavy_check_mark: |
 | `subscribe` / `on-update-of` | Postpone loading of a plugin or snippet until the given file(s) get updated, e.g. `subscribe'{~/files-*,/tmp/files-*}'` | :heavy_check_mark: | :heavy_check_mark: |
 | `service` | Make following plugin or snippet a *service*, which will be ran in background, and only in single Zshell instance. See [zservices org](https://github.com/zservices). | :heavy_check_mark: | :heavy_check_mark: |
 | `compile` | Pattern (+ possible `{...}` expansion, like `{a/*,b*}`) to select additional files to compile, e.g. `compile"(pure\ | :heavy_check_mark: | :heavy_check_mark: |
 | `nocompletions` | Don't detect, install and manage completions for this plugin. Completions can be installed later with `zplugin creinstall {plugin-spec}`. | :heavy_check_mark: | :heavy_check_mark: |
 | `nocompile` | Don't try to compile `pick`-pointed files. If passed the exclamation mark (i.e. `nocompile'!'`), then do compile, but after `make''` and `atclone''` (useful if Makefile installs some scripts, to point `pick''` at location of installation). | :heavy_check_mark: | :heavy_check_mark: |
-| [**`multisrc`**](http://zdharma.org/zplugin/wiki/Sourcing-multiple-files) | Allows to specify multiple files for sourcing, enumerated with spaces as the separator (e.g. `multisrc'misc.zsh grep.zsh'`) and also using brace-expansion syntax (e.g. `multisrc'{misc,grep}.zsh'`). | :heavy_check_mark: | :heavy_check_mark: |
+| [**`multisrc`**](http://TralahM.org/zplugin/wiki/Sourcing-multiple-files) | Allows to specify multiple files for sourcing, enumerated with spaces as the separator (e.g. `multisrc'misc.zsh grep.zsh'`) and also using brace-expansion syntax (e.g. `multisrc'{misc,grep}.zsh'`). | :heavy_check_mark: | :heavy_check_mark: |
 
 Order of execution of related Ice-mods: `atinit` -> `atpull!` -> `make'!!'` -> `mv` -> `cp` -> `make!` -> `atclone`/`atpull` -> `make` -> `(plugin script loading)` -> `src` -> `multisrc` -> `atload`.
 
@@ -498,7 +498,7 @@ zplugin light NicoSantangelo/Alpharized
 ```
 
 See also the Wiki page: [Example Oh My Zsh
-Setup](http://zdharma.org/zplugin/wiki/Example-Oh-My-Zsh-setup/).
+Setup](http://TralahM.org/zplugin/wiki/Example-Oh-My-Zsh-setup/).
 
 # Completions
 
@@ -543,7 +543,7 @@ Performance gains are huge, example shell startup time with double `compinit`: *
 If you load completions using `wait''` Turbo mode then you can add
 `atinit'zpcompinit'` to syntax-highlighting plugin (which should be the last
 one loaded, as their (2 projects, [z-sy-h](https://github.com/zsh-users/zsh-syntax-highlighting) &
-[f-sy-h](https://github.com/zdharma/fast-syntax-highlighting))
+[f-sy-h](https://github.com/TralahM/fast-syntax-highlighting))
  documentation state), or `atload'zpcompinit'` to last
 completion-related plugin. `zpcompinit` is a function that just runs `autoload
 compinit; compinit`, created for convenience. There's also `zpcdreplay` which
@@ -598,7 +598,7 @@ source smaller helper scripts or dependency libraries (for example, the prompt `
 and there are very few solutions to that, which are demanding (e.g. specifying all helper files in plugin load
 command and tracking updates to the plugin – in Zplugin case: by using `compile` ice-mod).
 
-  ![image](https://raw.githubusercontent.com/zdharma/zplugin/images/mod-auto-compile.png)
+  ![image](https://raw.githubusercontent.com/TralahM/zplugin/images/mod-auto-compile.png)
 
 ## Installation
 
@@ -608,7 +608,7 @@ To install just the binary Zplugin module **standalone** (Zplugin is not needed,
 other plugin manager), execute:
 
 ```zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/mod-install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/TralahM/zplugin/master/doc/mod-install.sh)"
 ```
 
 This script will display what to add to `~/.zshrc` (2 lines) and show usage instructions.
@@ -692,7 +692,7 @@ two seconds after prompt:
 
 ```zsh
 zplugin ice wait"2" lucid as"program" pick"bin/git-dsf"
-zplugin light zdharma/zsh-diff-so-fancy
+zplugin light TralahM/zsh-diff-so-fancy
 
 zplugin ice wait"2" lucid as"program" pick"$ZPFX/bin/git-now" make"prefix=$ZPFX install"
 zplugin light iwata/git-now
@@ -712,13 +712,13 @@ Connect to [chat.freenode.net:6697](ircs://chat.freenode.net:6697/%23zplugin) (S
 
 Following is a quick access via Webchat [![IRC](https://kiwiirc.com/buttons/chat.freenode.net/zplugin.png)](https://kiwiirc.com/client/chat.freenode.net:+6697/#zplugin)
 
-[status-badge]: https://travis-ci.org/zdharma/zplugin.svg?branch=master
-[status-link]: https://travis-ci.org/zdharma/zplugin
+[status-badge]: https://travis-ci.org/TralahM/zplugin.svg?branch=master
+[status-link]: https://travis-ci.org/TralahM/zplugin
 [MIT-badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [MIT-link]: ./LICENSE
-[ver-badge]: https://img.shields.io/github/tag/zdharma/zplugin.svg
-[ver-link]: https://github.com/zdharma/zplugin/releases
-[act-badge]: https://img.shields.io/github/commit-activity/y/zdharma/zplugin.svg
+[ver-badge]: https://img.shields.io/github/tag/TralahM/zplugin.svg
+[ver-link]: https://github.com/TralahM/zplugin/releases
+[act-badge]: https://img.shields.io/github/commit-activity/y/TralahM/zplugin.svg
 [lobby-badge]: https://badges.gitter.im/zplugin/Lobby.svg
 [lobby-link]: https://gitter.im/zplugin/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 

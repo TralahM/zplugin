@@ -1,5 +1,5 @@
 # INTRODUCTION TO ZPLUGIN
-Sebastian Gniazdowski <psprint@zdharma.org>
+Sebastian Gniazdowski <psprint@TralahM.org>
 v0.93, 10/07/2019
 :source-highlighter: prettify
 :toc:
@@ -22,7 +22,7 @@ toc::[]
 **Example use:**
 
 ```SystemVerilog
-% zplugin load zdharma/history-search-multi-word
+% zplugin load TralahM/history-search-multi-word
 % zplugin light zsh-users/zsh-syntax-highlighting
 ```
 
@@ -70,7 +70,7 @@ memory usage, short loading time).
 
 The command `zplugin ice` provides Ice-modifiers for single next command (see
 the README subsection
-link:https://github.com/zdharma/zplugin#ice-modifiers[ice-modifiers]). The logic
+link:https://github.com/TralahM/zplugin#ice-modifiers[ice-modifiers]). The logic
 is that "ice" is something that melts (so it doesn't last long) and something
 that's added (e.g. to a drink or a coffee). Using other Ice-modifier "**pick**"
 user can explicitly select the file to source:
@@ -278,14 +278,14 @@ at first prompt. This makes autosuggestions inactive at first prompt.
 
 ```SystemVerilog
 zplugin ice wait'[[ -n ${ZLAST_COMMANDS[(r)cras*]} ]]'
-zplugin load zdharma/zplugin-crasis
+zplugin load TralahM/zplugin-crasis
 ```
 
 The plugin `zplugin-crasis` provides command `crasis`. Ice-mod `wait` is set to
 wait on condition. When user enters `cras` at command line, the plugin is
 instantly loaded and command `crasis` becomes available. **
 link:https://asciinema.org/a/149725[See this feature in action] **. This feature
-requires `zdharma/fast-syntax-highlighting` (it builds the `ZLAST_COMMANDS`
+requires `TralahM/fast-syntax-highlighting` (it builds the `ZLAST_COMMANDS`
 array).
 
 #### Automatic Load/Unload On Condition
@@ -318,7 +318,7 @@ load ...`, not `zplugin light ...`). Tracking causes slight slowdown, however
 this doesn't matter in turbo mode, as Zsh startup isn't slowed down.
 
 **See also Wiki on
-link:https://github.com/zdharma/zplugin/wiki/Multiple-prompts[multiple prompts].**
+link:https://github.com/TralahM/zplugin/wiki/Multiple-prompts[multiple prompts].**
 
 [appendix]
 == Revision history (history of updates to the document)

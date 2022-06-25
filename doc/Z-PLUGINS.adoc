@@ -1,5 +1,5 @@
 # Z-PLUGINS
-Sebastian Gniazdowski <psprint@zdharma.org>
+Sebastian Gniazdowski <psprint@TralahM.org>
 v1.01, 07/09/2019
 :source-highlighter: prettify
 :toc:
@@ -30,7 +30,7 @@ Zplugin – the dash and the plural form.
 ## How To Code Them?
 
 Below is an example body of an `atclone` hook (taken from
-link:https://github.com/zdharma/z-p-submods[zdharma/z-p-submods] z-plugin).
+link:https://github.com/TralahM/z-p-submods[TralahM/z-p-submods] z-plugin).
 It shows how to:
 
 . Obtain the arguments passed to the hook.
@@ -105,7 +105,7 @@ zplugin snippet PZT::modules/autosuggestions
 ```
 
 Checkout the project which fully implements this idea,
-link:https://github.com/zdharma/z-p-submods[zdharma/z-p-submods]. It e.g.
+link:https://github.com/TralahM/z-p-submods[TralahM/z-p-submods]. It e.g.
 also implements the `atpull` hook, i.e. supports automatic update of the
 submodules. The `z-p-*` prefix is recommended for projects that are being
 z-plugins.
@@ -129,7 +129,7 @@ There are 2 or 3 subtypes for each of the hook:
 
 [appendix]
 == Revision history (history of updates to the document)
-v1.01, 07/09/2019: Fix typo, add the second zdharma/z-p-submods link, uplift +
+v1.01, 07/09/2019: Fix typo, add the second TralahM/z-p-submods link, uplift +
 v1.0, 07/09/2019: First version
 
 // vim:tw=75
